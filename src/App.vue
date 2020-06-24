@@ -28,6 +28,7 @@
 <script>
 import Card from './components/CardComponent.vue';
 import Transaksi from './components/TransaksiComponent.vue';
+import swal from 'sweetalert2';
 export default {
   name: 'app',
   components: {
@@ -40,7 +41,12 @@ export default {
       },
   },
   created(){
-    console.log('')
+    this.$swal('hallow world');
+    console.log('created!');
+    console.log(this.$swal);
+    console.log(swal);
+    console.log(VueSweetalert2);
+    
   },
   data () {
     return {
