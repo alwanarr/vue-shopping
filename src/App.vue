@@ -28,6 +28,7 @@
 <script>
 import Card from './components/CardComponent.vue';
 import Transaksi from './components/TransaksiComponent.vue';
+import swal from 'sweetalert2';
 export default {
   name: 'app',
   components: {
