@@ -40,7 +40,7 @@ export default {
       },
   },
   created(){
-    this.$swal('hallow world');
+    console.log('')
   },
   data () {
     return {
