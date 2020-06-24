@@ -41,6 +41,11 @@ export default {
   },
   created(){
     this.$swal('hallow world');
+    console.log('created!');
+    console.log(this.$swal);
+    console.log(swal);
+    console.log(VueSweetalert2);
+    
   },
   data () {
     return {
