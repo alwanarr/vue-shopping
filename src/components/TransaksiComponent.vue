@@ -48,7 +48,7 @@
 </template>
 <script>
 import { mapMultiRowFields } from "vuex-map-fields";
-// import swal from 'sweetalert2';
+import swal from 'sweetalert2';
 export default {
     computed: {
       getProducts () {
@@ -75,7 +75,7 @@ export default {
     methods: {
     
     removeCart(id, produk){
-      this.$swal({
+      swal.fire({
           title: 'Apakah Anda Yakin?',
 					text: `Anda Ingin Menghapus ${produk} Dari Transaksi`,
 					icon: 'warning',
@@ -89,7 +89,7 @@ export default {
       });
     },
     clearAll(){
-      this.$swal({
+      swal.fire({
         title: 'Apakah Anda Ingin Menghapus Semua Transaksi?',
         icon: 'warning',
         showCancelButton: true,
@@ -102,7 +102,7 @@ export default {
       })
     },
     orderNow(){
-      this.$swal({
+      swal.fire({
         title: 'Thankss',
         icon: 'success',
         showCancelButton: false,
