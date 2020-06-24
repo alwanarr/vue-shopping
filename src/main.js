@@ -6,6 +6,14 @@ import {store} from './store';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueSweetalert2 from 'vue-sweetalert2';
 
+Vue.use({
+  // this is the required "install" method for Vue plugins
+  install (Vue) {
+    Vue.swal = swal
+    Vue.prototype.$swal = swal
+  }
+})
+
 Vue.use(VueSweetalert2);
 new Vue({
   el: '#app',
