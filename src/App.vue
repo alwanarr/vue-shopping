@@ -39,6 +39,9 @@ export default {
         return this.$store.getters.getProducts;
       },
   },
+  created(){
+    this.$swal('hallow world');
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
