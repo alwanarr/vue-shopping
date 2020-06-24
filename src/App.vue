@@ -45,7 +45,6 @@ export default {
     console.log('created!');
     console.log(this.$swal);
     console.log(swal);
-    console.log(VueSweetalert2);
     
   },
   data () {

@@ -9,8 +9,8 @@ import VueSweetalert2 from 'vue-sweetalert2';
 Vue.use({
   // this is the required "install" method for Vue plugins
   install (Vue) {
-    Vue.swal = swal
-    Vue.prototype.$swal = swal
+    Vue.swal = VueSweetalert2
+    Vue.prototype.$swal = VueSweetalert2
   }
 })
 
